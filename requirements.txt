@@ -22,7 +22,6 @@ mac-vendor-lookup==0.1.12
 MarkupSafe==3.0.2
 multidict==6.6.4
 mysql-connector-python==9.4.0
-netifaces==0.11.0
 propcache==0.3.2
 pyasn1==0.6.1
 pyasn1_modules==0.4.2
