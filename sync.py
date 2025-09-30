@@ -79,9 +79,9 @@ def sync_devices(devices, retries=2, retry_delay=3):
                     # 更新已有设备信息
                     cur.execute(f"""
                         UPDATE {TABLE_NAME} 
-                        SET ip=%s, hostname=%s, vendor=%s, online=1, last_seen=%s
+                        SET ip=%s, vendor=%s, online=1, last_seen=%s
                         WHERE id=%s
-                    """, (ip, hostname, vendor, now, row[0]))
+                    """, (ip, vendor, now, row[0]))
                 else:
                     # 插入新设备
                     cur.execute(f"""
